@@ -12,7 +12,7 @@ export default function LandingPage() {
     transition={{ duration: 1 }}>
 
         <div className="bg-customLight">
-        <Header />
+        
         <About />
         </div>
  

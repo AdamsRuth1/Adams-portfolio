@@ -8,7 +8,7 @@ export default function Header() {
         <>
         
         <header>
-    <nav class=" border-gray-200 px-4 lg:px-6 py-2.5 bg-gray-900 ">
+    <nav class=" border-gray-200 px-4  lg:px-6 py-6 bg-gray-900 ">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <Link to="/" className="flex items-center">
                 <img src={logo} class="mr-3 h-9 sm:h-9" alt="Adams Logo" />
@@ -24,7 +24,7 @@ export default function Header() {
             </div>
             <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                 <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                   <List to="/">About</List>
+                   <List to="/about">About</List>
                    <List href="#">Projects</List>
                    <List href="#">Contact</List>
                    <List href="#">Resume</List>

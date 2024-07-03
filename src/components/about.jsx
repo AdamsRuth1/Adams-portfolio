@@ -1,26 +1,40 @@
 import React from "react";
 import { motion } from 'framer-motion';
+import Image from "../assets/Looper-1.png"
+import Photo from "../assets/image0 (1).jpeg"
+import Header from "../views/header"
+import SkillsList from "./skills";
 export default function About() {
+   
     return(
         <motion.div initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}>
-           <div className="bg-customLight text-white text-center mt-4 p-4">
-    <h1 className="animate-bounce text-3xl md:text-5xl font-millik">
-        Hello <span className="animate-ping">👋</span>
+            <Header/>
+<div className= "bg-customLight  text-white text-center  " style={{ backgroundImage: `url(${Image})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+<div className="py-10"><h1 className="animate-bounce text-3xl   md:text-5xl font-millik">
+        Hello <span className="animate-waving-hand inline-block">👋</span>
+
     </h1>
-    <p>Software Engineer</p>
-    <main className="relative min-h-screen flex flex-col justify-center bg-slate-900 overflow-hidden">
-        <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
-            <div className="text-center">
+    
+    <div className="text-center mt-4 flex justify-center">
+  <img src={Photo} style={{ borderRadius: '50%', maxWidth: '300px', maxHeight: '300px' }} />
+</div>
+</div>
+
+
+
+    <main className="relative min-h-screen flex flex-col justify-center  overflow-hidden">
+        <div class="w-full max-w-6xl mx-auto  ">
+            <div className="text-center mt-[-160px]">
 
                 
-                <div className="font-extrabold text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200">Trusted by the most innovative minds in <span className="text-indigo-500 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
-                    <ul className="block animate-text-slide-5 text-left leading-tight [&_li]:block">
+                <div className="font-extrabold font-Modarat text-white text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200"> I am a software engineer Trusted by the most innovative minds in <span className="text-indigo-500 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
+                    <ul className="block animate-text-slide-5 text-left leading-tight font-millik [&_li]:block">
                         <li>Finance</li>
                         <li>Tech</li>
                         <li>AI</li>
-                        <li>Crypto</li>
+                        <li>HealthCare</li>
                         <li>eCommerce</li>
                         <li aria-hidden="true">Finance</li>
                     </ul>
@@ -28,7 +42,14 @@ export default function About() {
                
                 
             </div>
+            <div className=" h-2 bg-white mt-6"></div>
+            <div>
+            <h1 className="font-millik text-5xl md:text-4xl mt-12 ">About Me</h1>
+    <p className="font-Modarat text-xl mt-8">I'm Adams Ruth, a frontend developer and computer scientist with a strong foundation in building intuitive web experiences. With a B.Sc. and M.Sc. in Computer Science, along with a Diploma in Software Engineering, I bring a deep understanding of both theory and practical application to my work.
 
+Passionate about computing and driven by the challenge of crafting websites that meet users' needs, I thrive on creating seamless, responsive interfaces that elevate user interaction. My journey in web development is fueled by a commitment to continuous learning and innovation, ensuring each project reflects both my expertise and dedication.</p>
+            </div>
+            
         </div>
     </main>
     
@@ -58,10 +79,8 @@ export default function About() {
             </button>
         </div>
     </div>
-    <h2 className="font-millik text-2xl md:text-4xl mt-12 ">About Me</h2>
-    <p className="font-Modarat text-xl mt-8">I'm Adams Ruth, a frontend developer and computer scientist with a strong foundation in building intuitive web experiences. With a B.Sc. and M.Sc. in Computer Science, along with a Diploma in Software Engineering, I bring a deep understanding of both theory and practical application to my work.
-
-Passionate about computing and driven by the challenge of crafting websites that meet users' needs, I thrive on creating seamless, responsive interfaces that elevate user interaction. My journey in web development is fueled by a commitment to continuous learning and innovation, ensuring each project reflects both my expertise and dedication.</p>
+  
+   
 </div>
 
         </motion.div>
