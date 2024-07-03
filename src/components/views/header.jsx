@@ -1,183 +1,37 @@
-import React, { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
-import logo from "../../assets/images/Vector (1).png";
-import { motion } from "framer-motion";
+import React from "react";
+import logo from "../../assets/RuthLogo.png";
+import { Link } from "react-router-dom";
+import List from "../listComponent";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
-
-  console.log(isOpen);
-
-  return (
-    <>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <nav className="bg-white-400 py-2 shadow font-Modarat">
-          <div className="flex items-center justify-between md:ml-24 mr-4 ml-4  md:mr-24  py-2 ">
-            <div className="flex">
-              <img src={logo} alt="Tuition Logo" className=" mx-4" />
-            </div>
-
-            <div className="md:hidden border border-black-500 px-2 py-1 rounded ">
-              <button className="text-black border-black" onClick={toggleMenu}>
-                <svg
-                  className="h-6 w-6 "
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-              </button>
-            </div>
-            <ul className="hidden md:flex space-x-4">
-              <li>
-                <Link
-                  to="/"
-                  className="text-black hover:bg-white hover:text-customButton hover:border-customButton hover:rounded-full px-4 py-2 border-2 border-transparent transition-all duration-300"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/blog"
-                  className="text-black hover:bg-white hover:text-customButton hover:border-customButton hover:rounded-full px-4 py-2 border-2 border-transparent transition-all duration-300"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/dashboard/"
-                  className="text-black hover:bg-white hover:text-customButton hover:border-customButton hover:rounded-full px-4 py-2 border-2 border-transparent transition-all duration-300"
-                >
-                  Testimonial
-                </Link>
-              </li>
-              {/* <li>
-                <div className="relative">
-                  <a
-                    onClick={toggleDropdown}
-                    href="#"
-                    className="flex items-center text-black hover:bg-white hover:text-blue-900 hover:border-blue-900 hover:rounded-full px-4 border-2 border-transparent transition-all duration-300"
-                  >
-                    Developer
-                    <svg
-                      className="h-6 w-6 mr-2 ml-2 text-gray-700"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </a>
-                  {isDropdownOpen && (
-                    <div className="absolute top-full left-0 bg-white border border-gray-300 rounded-md mt-1 shadow-md">
-                     
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                      >
-                        Item 1
-                      </a>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                      >
-                        Item 2
-                      </a>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                      >
-                        Item 3
-                      </a>
-                    </div>
-                  )}
-                </div>
-              </li> */}
-              <li> 
-                <NavLink to="/contactUs"
-                  className="text-black hover:bg-white hover:text-blue-900 hover:border-customButton hover:rounded-full px-4 py-2 border-2 border-transparent transition-all duration-300"
-                >
-                  Support
-                </NavLink>
-              </li>
-            </ul>
-            <div className="md:flex justify-between space-x-4 mx-3 hidden">
-              <Link className="border-2 border-customButton rounded-md text-customButton py-1 px-3 hover:bg-customButton hover:text-white">
-                Download App
-              </Link>
-              <Link
-                to="/signin"
-                className="bg-customButton border rounded-md text-white text-center py-2 px-3 hover:bg-blue-900"
-              >
-                Sign in
-              </Link>
-            </div>
-          </div>
-          {/* mobile display */}
-          {isOpen ? (
-            <ul className="flex-col md:hidden md:mr-0 md:ml-0 mr-6 ml-6  py-4 ">
-              <li className=" text-black hover:text-blue-900 hover:border-blue-900  hover:rounded-full  px-4 py-4 border border-transparent transition-all duration-300">
-                <Link to="/" className="">
-                  Home
-                </Link>
-              </li>
-              <li className=" text-black hover:text-blue-900 hover:border-blue-900 hover:rounded-full px-4 py-4 border border-transparent  transition-all duration-300">
-                <Link to="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link
-                  to="/dashboard"
-                  className="text-black hover:bg-white hover:text-customButton hover:border-customButton hover:rounded-full px-4 py-2 border-2 border-transparent transition-all duration-300"
-                >
-                  Testimonial
-                </Link>
-              </li>
-              <li className=" text-black hover:text-blue-900 hover:border-blue-900  hover:rounded-full px-4 py-4 border border-transparent transition-all duration-300 ">
-                <NavLink to="/contactUs">Support</NavLink>
-              </li>
-              <div className=" flex flex-col mb-4 justify-between my-6  md:mr-0 md:ml-0 mr-6 ml-4 ">
-                <Link
-                  to="/signup"
-                  className="bg-blue-900 border rounded-md text-white py-4 w-full text-center my-4  hover:bg-blue-900 "
-                >
-                  Sign in
-                </Link>
-                <button className="border-2 border-customButton rounded-md text-blue-800 py-4 w-full ">
-                  Download App
+    return (
+        <>
+        <header>
+    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+            <Link to="/" className="flex items-center">
+                <img src={logo} class="mr-3 h-9 sm:h-9" alt="Adams Logo" />
+                <span class="self-center text-xl font-millik font-semibold whitespace-nowrap dark:text-white">Adams Ruth</span>
+            </Link>
+            <div class="flex items-center lg:order-2">
+               
+                <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </button>
-              </div>
-            </ul>
-          ) : null}
-        </nav>
-        {/* <Landing />
-        <Why />
-        <AltWaveExplore /> */}
-      </motion.div>
-    </>
-  );
+            </div>
+            <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                   <List to="/">About</List>
+                   <List href="#">Projects</List>
+                   <List href="#">Contact</List>
+                   <List href="#">Resume</List>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        </>
+    )
 }

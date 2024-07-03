@@ -1,42 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { SignupContextProvider } from "./context/SignupContext";
-import Landing from "./components/landingPage/landingPage";
-import EnrollPage from "./components/onboarding/Enroll";
-import SignIn from "./components/onboarding/SignIn";
-import SignUp from "./components/onboarding/SignUp";
-import Blog from "./components/onboarding/BlogPage";
-import EnrollSuccess from "./components/onboarding/EnrollSuccess";
-import ContactUs from "./components/onboarding/contactUs/contactus";
-import Faq from "./components/landingPage/faq";
-import Dashboard from "./components/dashboard/DashboardHome";
-// import PayTuition from "./components/dashboard/PayTuition/InstituteInfor";
-import Tuition from "./components/dashboard/PayTuition/Tuition";
-// import PaymentInformation from "./components/dashboard/PayTuition/PaymentInformation";
-import Wallet from "./components/dashboard/Wallets";
-import "./index.css";
+import Header from "./components/views/header";
 
 function App() {
   return (
-    <SignupContextProvider>
+   
       <Router>
         <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/enroll" element={<EnrollPage />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/enrollsuccess" element={<EnrollSuccess />} />
-          <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/faq" element={<Faq />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="*" element={"Not Found"} />
-
-          <Route path="/dashboard/Tuition" element={<Tuition />} />
-          {/* <Route path="/dashboard/Tuition/payment" element={<PaymentInformation />} /> */}
-          <Route path="/dashboard/wallet" element={<Wallet />} />
+          <Route path="/" element={<Header />} />
+        
         </Routes>
       </Router>
-    </SignupContextProvider>
   );
 }
 
