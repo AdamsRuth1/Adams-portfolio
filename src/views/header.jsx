@@ -1,13 +1,14 @@
 import React from "react";
-import logo from "../../assets/RuthLogo.png";
+import logo from "../assets/RuthLogo.png";
 import { Link } from "react-router-dom";
-import List from "../listComponent";
-
+import List from "../components/listComponent";
+import About from "../components/about";
 export default function Header() {
     return (
         <>
+        
         <header>
-    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+    <nav class=" border-gray-200 px-4 lg:px-6 py-2.5 bg-gray-900 ">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <Link to="/" className="flex items-center">
                 <img src={logo} class="mr-3 h-9 sm:h-9" alt="Adams Logo" />
