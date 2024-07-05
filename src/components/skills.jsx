@@ -6,21 +6,24 @@ import Htmlogo from '../assets/html logo.png';
 import Csslogo from '../assets/css logo.png';
 import Boostraplogo from '../assets/boostrap.jpeg';
 
-const skills = [
-  { logo: TailwindLogo },
-  { logo: VueLogo },
-  { logo: JavaLogo },
-  { logo: Htmlogo },
-  { logo: Csslogo },
-  { logo: Boostraplogo }
+// Define your skills data with logo paths and descriptions
+const skillsData = [
+  { id: 1, logo: TailwindLogo, description: "Tailwind" },
+  { id: 2, logo: VueLogo, description: "Vue" },
+  { id: 3, logo: JavaLogo, description: "JavaScript" },
+  { id: 4, logo: Htmlogo, description: "HTML" },
+  { id: 5, logo: Csslogo, description: "CSS" },
+  { id: 6, logo: Boostraplogo, description: "Bootstrap" }
 ];
 
-function SkillsList({ skills }) {
+// SkillsList component
+function SkillsList() {
   return (
-    <div className="flex justify-between">
-      {skills.map((skill, index) => (
-        <div key={index}>
-          <img src={skill.logo} alt={`Logo ${index}`} className="w-20 h-20 object-contain" />
+    <div className="grid grid-cols-3 gap-4 mt-12">
+      {skillsData.map((skill) => (
+        <div key={skill.id} className="flex flex-col items-center justify-center mt-6 text-white">
+          <img src={skill.logo} alt={`Logo ${skill.id}`} className="w-20 h-20 object-contain mb-2" />
+          <p>{skill.description}</p>
         </div>
       ))}
     </div>

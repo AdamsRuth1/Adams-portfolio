@@ -54,7 +54,7 @@ Passionate about computing and driven by the challenge of crafting websites that
     </main>
     
    
-
+    
     
    
     <div className="fixed bottom-0 right-0 w-full md:bottom-6 md:right-12 md:w-auto z-50"  >
