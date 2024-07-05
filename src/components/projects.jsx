@@ -12,7 +12,7 @@ const projectsData = [
     description: "Adams Ruth Portfolio Website is a showcase of my skills, experience, and passion for frontend development and computer science. Designed to provide visitors with a seamless and engaging user experience, this website serves as a comprehensive platform to explore my professional journey, projects, and capabilities.",
     technologies: ["React.Js", "Tailwind"],
     image: Portfolio,
-    demoLink: "https://github.com/AdamsRuth1/My-Portfolio-Website-with-React",
+    demoLink: "https://my-portfolio-website-with-react.vercel.app/",
     githubLink: "https://github.com/AdamsRuth1/My-Portfolio-Website-with-React"
   },
   {
