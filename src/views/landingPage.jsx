@@ -14,12 +14,12 @@ export default function LandingPage() {
       >
         <div className="bg-customLight">
           <About />
-          <div className="bg-gray-900">
+          <div className="bg-gray-900 p-8" id="SkillsId">
             <h1 className="font-millik text-4xl py-8 animate-bounce text-white text-center">Skills</h1>
             <SkillsList />
           </div>
-          <div className="container mx-auto px-4 py-8">
-            <h1 className="text-3xl font-bold mb-8">My Portfolio</h1>
+          <div className="container mx-auto px-4 py-8 " id="Project">
+            <h1 className="text-3xl font-bold mb-8 text-white text-center mt-4 animate-pulse">My Portfolio</h1>
             <ProjectsList />
           </div>
         </div>

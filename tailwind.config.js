@@ -9,6 +9,7 @@ module.exports = {
         },
         colors: {
           customLight: "#24292f",
+          customBlue: "#4493f8"
         },
         fontFamily: {
           Modarat: ["Moderat-Regular", "sans-serif"],
