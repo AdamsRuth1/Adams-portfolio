@@ -1,21 +1,24 @@
 import React from "react";
 
 // Import your skill logos
-import TailwindLogo from '../assets/tailwind.png';
+import ReactLogo from '../assets/tailwind.png';
 import VueLogo from '../assets/Vue.js_Logo_2.svg.png';
 import JavaLogo from '../assets/JavaScript-logo.png';
 import Htmlogo from '../assets/html logo.png';
 import Csslogo from '../assets/css logo.png';
 import Boostraplogo from '../assets/boostrap.jpeg';
+import TailwindLogo from '../assets/tailwindcss.webp'
 
 // Define your skills data with logo paths and descriptions
 const skillsData = [
-  { id: 1, logo: TailwindLogo, description: "Tailwind" },
-  { id: 2, logo: VueLogo, description: "Vue" },
-  { id: 3, logo: JavaLogo, description: "JavaScript" },
-  { id: 4, logo: Htmlogo, description: "HTML" },
-  { id: 5, logo: Csslogo, description: "CSS" },
-  { id: 6, logo: Boostraplogo, description: "Bootstrap" }
+    { id: 1, logo: Htmlogo, description: "HTML" },
+    { id: 2, logo: Csslogo, description: "CSS" },
+    { id: 3, logo: JavaLogo, description: "JavaScript" },
+    { id: 4, logo: Boostraplogo, description: "Bootstrap" },
+  { id: 5, logo:TailwindLogo , description: "Tailwind" },
+  { id: 6, logo: VueLogo, description: "Vue" },
+  { id: 7, logo: ReactLogo, description: "React" },
+ 
 ];
 
 // SkillsList component
