@@ -61,11 +61,11 @@ export default function About() {
             </div>
             <div className="h-2 bg-white mt-6"></div>
             <div className="bg-gray-900 p-1">
-              <div className="max-w-screen-xl mx-auto">
+              <div className="max-w-screen-xl mx-auto text-center">
                 <h1 className="font-millik text-5xl md:text-4xl mt-12 animate-bounce">
                   About Me
                 </h1>
-                <p className="font-Modarat text-xl mt-8">
+                <p className="font-Modarat text-xl mt-8 py-8 px-8 text-center">
                   I'm Adams Ruth, a frontend developer and computer scientist
                   with a strong foundation in building intuitive web experiences.
                   With a B.Sc. and M.Sc. in Computer Science, along with a
