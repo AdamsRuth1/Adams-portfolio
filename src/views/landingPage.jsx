@@ -19,7 +19,7 @@ export default function LandingPage() {
             <SkillsList />
           </div>
           <div className="container mx-auto px-4 py-8 " id="Project">
-            <h1 className="text-3xl font-bold mb-8 text-white text-center mt-4 animate-pulse">My Portfolio</h1>
+            <h1 className="text-3xl font-bold mb-8 text-white text-center mt-4 animate-pulse">My Projects</h1>
             <ProjectsList />
           </div>
         </div>
