@@ -14,7 +14,7 @@ export default function LandingPage() {
       >
         <div className="bg-customLight">
           <About />
-          <div className="bg-gray-900 p-8" id="SkillsId">
+          <div className="bg-gray-900 p-8 mt-8" id="SkillsId">
             <h1 className="font-millik text-4xl py-8 animate-bounce text-white text-center">Skills</h1>
             <SkillsList />
           </div>

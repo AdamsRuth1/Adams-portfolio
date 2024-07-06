@@ -39,10 +39,10 @@ export default function About() {
           </div>
         </div>
 
-        <main className="relative min-h-screen flex flex-col justify-center overflow-hidden">
-          <div className="w-full mx-auto px-4 lg:px-0">
-            <div className="text-center mt-[-160px]">
-              <div className="font-extrabold text-white text-3xl md:text-4xl mt-18 bg-clip-text">
+        <main className="relative min-h-screen flex flex-col justify-center overflow-hidden ">
+          <div className="w-full mx-auto lg:px-0">
+            <div className="text-center md:mt-[-380px] mt-[-160px]">
+              <div className="font-extrabold text-white text-3xl md:text-4xl py-14 md:py-0 bg-clip-text">
                 <br />
                 <br />
                 <br />
