@@ -17,7 +17,7 @@ export default function Header() {
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <Link to="/" className="flex items-center">
               <img src={logo} className="mr-3 h-9 sm:h-9" alt="Adams Logo" />
-              <span className="self-center text-xl font-millik font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center text-xl font-millik font-semibold text-white whitespace-nowrap dark:text-white">
                 Adams Ruth
               </span>
             </Link>
@@ -61,10 +61,10 @@ export default function Header() {
               }  justify-between items-center w-full lg:flex lg:w-auto lg:order-1`}
               id="mobile-menu-2"
             >
-              <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                <List to="">About</List>
-                <List to="#SkillsId">Skills</List>
-                <List to="/#Project">Projects</List>
+              <ul className="flex flex-col mt-4 text-white font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                <List to="" className="text-white hover:text-gray-600">About</List>
+                <List to="#SkillsId" className="text-white hover:text-gray-600">Skills</List>
+                <List to="/#Project" className="text-white hover:text-gray-600">Projects</List>
               </ul>
             </div>
           </div>
