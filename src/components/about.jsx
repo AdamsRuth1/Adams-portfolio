@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "../assets/Looper-1.png";
-import Photo from "../assets/image0 (1).jpeg";
+import Image from "../assets/Looper-1.webp";
+import Photo from "../assets/image0.webp";
 import Header from "../views/header";
 import SkillsList from "./skills";
 

@@ -1,9 +1,9 @@
 import React from "react";
-import Portfolio from '../assets/Portfolio2.png';
-import Quote from '../assets/Quote.png';
-import Altwave from '../assets/Altwave.png';
-import VueAssignment from '../assets/VueAssignment.png';
-import Mindlift from '../assets/mindlift.png'
+import Portfolio from '../assets/Portfolio2.webp';
+import Quote from '../assets/Quote.webp';
+import Altwave from '../assets/Altwave.webp';
+import VueAssignment from '../assets/VueAssignment.webp';
+import Mindlift from '../assets/mindlift.webp'
 
 const projectsData = [
   {

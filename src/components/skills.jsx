@@ -1,12 +1,12 @@
 import React from "react";
 
 // Import your skill logos
-import ReactLogo from '../assets/tailwind.png';
-import VueLogo from '../assets/Vue.js_Logo_2.svg.png';
-import JavaLogo from '../assets/JavaScript-logo.png';
-import Htmlogo from '../assets/html logo.png';
-import Csslogo from '../assets/css logo.png';
-import Boostraplogo from '../assets/boostrap.jpeg';
+import ReactLogo from '../assets/tailwind.webp';
+import VueLogo from '../assets/Vue.js_Logo_2.svg.webp';
+import JavaLogo from '../assets/JavaScript-logo.webp';
+import Htmlogo from '../assets/html logo.webp';
+import Csslogo from '../assets/css logo.webp';
+import Boostraplogo from '../assets/boostrap.webp';
 import TailwindLogo from '../assets/tailwindcss.webp'
 
 // Define your skills data with logo paths and descriptions

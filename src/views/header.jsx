@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/RuthLogo.png";
+import logo from "../assets/RuthLogo.webp";
 import { Link } from "react-router-dom";
 import List from "../components/listComponent";
 
