@@ -12,7 +12,7 @@ const projectsData = [
     description: "Adams Ruth Portfolio Website is a showcase of my skills, experience, and passion for frontend development and computer science. Designed to provide visitors with a seamless and engaging user experience, this website serves as a comprehensive platform to explore my professional journey, projects, and capabilities.",
     technologies: ["React.Js", "Tailwind"],
     image: Portfolio,
-    demoLink: "https://my-portfolio-website-with-react.vercel.app/",
+    demoLink: "https://adamsruth.vercel.app/",
     githubLink: "https://github.com/AdamsRuth1/My-Portfolio-Website-with-React"
   },
   {
@@ -36,10 +36,10 @@ const projectsData = [
   {
     id: 4,
     title: "Tuition by flutterwave Clone",
-    description: "The Enhancing Cloned Version of the Tuition by Flutterwave website project involves a dedicated team's effort to enhance and improve upon an existing platform originally developed by Flutterwave. This project focuses on cloning the core functionalities while integrating new features to better meet evolving customer needs. By leveraging the existing foundation laid out by Flutterwave, the team aims to elevate user experience and expand the website's functionality..",
+    description: "Tuition by Flutterwave is a revamped and enhanced version of the original Tuition web app. This updated project focuses on improving user experience, accessibility, and ease of use, while also incorporating additional features. It is developed using React and Tailwind. Currently, it is responsive for desktop screens, with mobile responsiveness set ",
     technologies: ["React.js", "Tailwind"],
     image: Altwave,
-    demoLink: "https://altwave-b-project-d9mc.vercel.app/",
+    demoLink: "https://altwave-rt2d.vercel.app/",
     githubLink: "https://github.com/AdamsRuth1/altschool-Vue-Assignment"
   },
   
