@@ -1,4 +1,3 @@
-import React from "react";
 
 // Import your skill logos
 import ReactLogo from '../assets/tailwind.webp';
@@ -8,6 +7,8 @@ import Htmlogo from '../assets/html logo.webp';
 import Csslogo from '../assets/css logo.webp';
 import Boostraplogo from '../assets/boostrap.webp';
 import TailwindLogo from '../assets/tailwindcss.webp'
+import GithubLogo from '../assets/github logo.png'
+import TypescriptLogo from '../assets/Typescript_logo_2020.svg.png'
 
 // Define your skills data with logo paths and descriptions
 const skillsData = [
@@ -18,7 +19,8 @@ const skillsData = [
   { id: 5, logo:TailwindLogo , description: "Tailwind" },
   { id: 6, logo: VueLogo, description: "Vue" },
   { id: 7, logo: ReactLogo, description: "React" },
- 
+  {id: 8, logo: GithubLogo, description: "Github"},
+ {id: 9, logo: TypescriptLogo, description: "Typescript"}
 ];
 
 // SkillsList component
