@@ -94,7 +94,7 @@ export default function About() {
                 <span className="italic px-1.5">/</span>
                 <a
                   className="font-medium hover:underline text-indigo-500 flex items-center"
-                  href="https://www.canva.com/design/DAGKHcgrMs8/cw2bdB7WDu2BWeN44ZPQ8A/view?utm_content=DAGKHcgrMs8&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                  href="https://www.canva.com/design/DAGRP03LXc8/fl8xbiOW7RBH8xvqRFFA_w/view?utm_content=DAGRP03LXc8&utm_campaign=designshare&utm_medium=link&utm_source=editor"
                   target="_blank"
                   rel="noreferrer"
                 >

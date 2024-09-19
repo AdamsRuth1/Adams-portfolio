@@ -9,7 +9,7 @@ import Boostraplogo from '../assets/boostrap.webp';
 import TailwindLogo from '../assets/tailwindcss.webp'
 import GithubLogo from '../assets/github logo.png'
 import TypescriptLogo from '../assets/Typescript_logo_2020.svg.png'
-
+import Supabase from '../assets/superbase Logo.png'
 // Define your skills data with logo paths and descriptions
 const skillsData = [
     { id: 1, logo: Htmlogo, description: "HTML" },
@@ -20,7 +20,8 @@ const skillsData = [
   { id: 6, logo: VueLogo, description: "Vue" },
   { id: 7, logo: ReactLogo, description: "React" },
   {id: 8, logo: GithubLogo, description: "Github"},
- {id: 9, logo: TypescriptLogo, description: "Typescript"}
+ {id: 9, logo: TypescriptLogo, description: "Typescript"},
+ {id: 10, logo: Supabase, description: "Supabase"}
 ];
 
 // SkillsList component
