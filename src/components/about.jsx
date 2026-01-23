@@ -68,8 +68,8 @@ export default function About() {
                 <p className="font-Modarat text-xl mt-8 py-8 px-8 text-center">
                   I'm Adams Ruth, a frontend developer and computer scientist
                   with a strong foundation in building intuitive web experiences.
-                  With a B.Sc. and M.Sc. in Computer Science, along with a
-                  Diploma in Software Engineering, I bring a deep understanding
+                 I have a Bsc and Msc(inview) in Computer Science, along with a
+                  Diploma in Software Engineering. I bring a deep understanding
                   of both theory and practical application to my work. Passionate
                   about computing and driven by the challenge of crafting websites
                   that meet users' needs, I thrive on creating seamless, responsive
